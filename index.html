@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+       <div id="logo">
+          <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"/>
+          <h1>ODIN</h1>
+       </div>
+       <p>Photo by Halie West on Unsplash</p>
+    </div>
+    <div id="main-content">
+       <p>This is not a real online service! You know you need something
+like this in your life to help you realize your deepest dreams.
+Sign up now to get started.<br/><br/>You know you want to.</p>
+       <div id="inputs">
+            <div id="fields">
+            <h2>Let's do this!</h2>
+          <form action="#" method="get">
+            <fieldset>
+             <lable for="first-name">
+             <input type="text" id="first-name" name="first-name" placeholder="First name" pattern="[A-Za-z0-9_]{2,15}" required/>
+             <lable for="last-name">
+             <input type="text" id="last-name" name="last-name" placeholder="Last name" pattern="[A-Za-z0-9_]{2,15}" required/>
+            </fieldser>
+            <fieldset>
+             <lable for="email">
+             <input type="Email" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required/>
+             <lable for="phone-number">
+             <input type="tel" id="phone-number" name="phone-number" placeholder="Phone number" pattern="^00[0-9]{6,}$" required/>
+            </fieldset>
+            <fieldset>
+             <lable for="password">
+             <input type="password" id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+             <lable for="confirm-password">
+             <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"required/>
+            </fieldset>
+            </div>
+             <button id="submit-btn">Create Account</button>
+          </form>
+       </div>
+       <p id="log-in">Already have an account? <a href="#">Log in</a></p>
+    </div>
+    
+  </div>
+  
+</body>
+
+</html>

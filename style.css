@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(fonts/Norse-Bold.otf);
+}
+
+:root {
+  --green: #596D48;
+  --light-gray: #E5E7EB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100hv;
+  width: 100%;
+  font-family: system-ui;
+  background-color: #E5E5E5;
+  color: black;
+}
+
+#container {
+  display: flex;
+}
+
+#header {
+  position: relative;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#header p {
+  color: #fff;
+  font-weight: 100;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+#logo {
+  background-color: #00000075;
+  width: 100%;
+  margin-bottom: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+#logo h1 {
+  font-family: Norse-Bold, sans-serif;
+  font-size: 100px;
+  color: #ffffff;
+  margin-bottom: -25px;
+}
+
+#logo img {
+  width: 100px;
+}
+
+#main-content {
+  margin-top: 150px;
+}
+
+#main-content p {
+  margin: 30px;
+}
+
+#fields {
+  background-color: #ffffff;
+  box-shadow: 0 3px 5px 0 #999999;
+  padding: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  font-size: 100%;
+  border: 2px solid var(--light-gray);
+  width: 330px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+input {
+  outline: none;
+  border: 2px solid var(--light-gray);
+}
+
+input:focus {
+  border: 2px solid blue;
+  box-shadow: 0 3px 5px 0 #999999;
+}
+
+#inputs h2 {
+  padding: 20px;
+}
+
+#submit-btn {
+  padding: 20px 40px;
+  border: none;
+  background-color: var(--green);
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 0 #999999;
+  margin: 40px;
+}
+
+#log-in a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+@media  only screen and (max-width:480px) {
+  #container {
+    flex-direction: column;
+  }
+  #header {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  #logo {
+    margin-bottom: 0;
+  }
+  
+  #submit-btn {
+    margin: 40px 0 0 80px;
+  }
+  #log-in {
+    padding-left: 50px;
+  }
+}
