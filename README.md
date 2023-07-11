@@ -4,7 +4,7 @@ This is a simple sign-up form webpage designed using HTML and CSS. It provides a
 
 ## Preview
 
-You can view the webpage live by clicking [here]( ).
+You can view the webpage live by clicking [here](https://laythalqadhi.github.io/sign-up-form/).
 
 ## Usage
 
